@@ -1,5 +1,5 @@
 import React  from 'react';
-import logo from '../asset/images/logo.svg';
+// import logo from '../asset/images/logo.svg';
 import { Icon } from 'antd';
 import PropTypes from 'prop-types';
 import { Home } from './Home'
