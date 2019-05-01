@@ -9,11 +9,11 @@ import {ShowReserve} from './ShowReserve'
 
 export class Main extends React.Component {
 getLogin = () => {
-   return this.props.isLoggedIn ? <Redirect to="/home"/> : <Login handleLogin={this.props.handleLogin}/>;
+   return this.props.isLoggedIn ? (this.props.client=="res"?<ShowReserve Id = {this.props.userId} client = {this.props.client}/>:<Redirect to="/home"/>) : <Login handleLogin={this.props.handleLogin}/>;
 }
 
 getHome = () => {
-    return  <Home userId = {this.props.userId}/>;
+    return this.props.client=="res"?<ShowReserve Id = {this.props.userId} client = {this.props.client}/>:<Home userId = {this.props.userId}/>;
 }
 
 getReserve = ({match}) => {
@@ -25,6 +25,7 @@ getShowReserve = ({match}) => {
 }
 
 getRoot = () => {
+
     return <Redirect to="/home"/>;
 }
 
@@ -33,6 +34,7 @@ getSuccess = () => {
 }
 
  render() {
+   console.log(this.props)
    return (
      <div className="main">
         <Switch>
