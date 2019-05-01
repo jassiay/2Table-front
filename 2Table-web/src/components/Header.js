@@ -22,8 +22,8 @@ export class Header extends React.Component {
  render() {
    return (
      <header className="App-header">
-       <img src={tablelogo} className="header-logo" alt="logo" />
-       <img src={tablelogo} className="header-logo2" alt="logo" />
+       <a href="/home"><img src={tablelogo} className="header-logo" alt="logo" /></a>
+       {/* <img src={tablelogo} className="header-logo2" alt="logo" /> */}
        {/* <h1 className="App-title"><a className="Home-title" href="/home">2Table</a></h1> */}
 
 

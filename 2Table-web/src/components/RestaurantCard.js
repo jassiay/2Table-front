@@ -26,7 +26,7 @@ export class RestaurantCard extends React.Component {
 
     render() {
 
-        console.log(this.props.resDetail.url)
+        // console.log(this.props.resDetail.url)
         const link = this.getReserveLink(this.state.id, this.state.userId)
         return (
         // <a href={link} className="h-a-null">

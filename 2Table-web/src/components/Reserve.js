@@ -48,7 +48,7 @@ export class Reserve extends React.Component {
 
   render() {
       const resInfo = this.state.resInfo;
-      console.log(this.state.resInfo);
+      // console.log(this.props);
     return (
       <div>
         <Container className = "reserve-container">
@@ -62,7 +62,7 @@ export class Reserve extends React.Component {
                       The company operates Checkers and Rally's restaurants in 28 states and the District of Columbia. 
                       They specialize in hamburgers, hot dogs, french fries, and milkshakes.</h5>
 
-                    <img src="https://i.loli.net/2019/04/15/5cb3e0210edb5.jpg" className="reserve-img" />
+                    <img src= {resInfo.url} className="reserve-img" />
                     <p>address:  {resInfo.address}
                     <br/>phone: {resInfo.phone}
                     <br/>email: {resInfo.email}</p>

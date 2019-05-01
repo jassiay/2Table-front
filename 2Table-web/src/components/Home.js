@@ -25,7 +25,6 @@ export class Home extends React.Component {
         url: `${API_ROOT}/searchRes`,
         method: 'GET',
         }).then((response) => {
-            console.log(JSON.parse(response));
             this.setState({
                 resList : JSON.parse(response)
             });
@@ -48,6 +47,7 @@ export class Home extends React.Component {
         </div>
         <Row>
           {this.state.resList.map((restaurant)=>{
+            console.log(restaurant)
             return <RestaurantCard key={restaurant.restaurant} resDetail={restaurant} userId = {this.props.userId}/>
           })}
         </Row>
