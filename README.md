@@ -11,5 +11,7 @@ This is the front-end part of the 2Table Restaurant Reservation Platform. The fr
 
 ## Instruction to set it up locally
 ```
-git clone
+git clone https://github.com/jassiay/2Table-front.git
+npm install
+npm start
 ```
