@@ -1,5 +1,5 @@
 #### This is the Original Create React App README.
-
+<hr />
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
