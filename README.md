@@ -1,5 +1,5 @@
 # 2Table-front
-ECE366 2Table restaurant reservation platform
+ECE366 2Table restaurant reservation platform Front-End
 
 Jing Jiang,
 Sirui Yang,
